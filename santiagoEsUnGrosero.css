@@ -1,0 +1,85 @@
+body
+{
+    font-family: system-ui;
+    background: #ffffff;
+}
+header
+{
+    color: rgb(18, 2, 4);
+    background-color: #FFF3D7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+#logo
+{
+    height: 70px;
+    margin: 10px;
+}
+#imgpizza
+{
+   width: 100%; 
+   position: relative;
+   top: 110px;
+   z-index: -50;
+}
+#imgabajo
+{
+    width: 100%; 
+    position: relative;
+    top: 110px;
+    z-index: -50;
+}
+#userimg
+{
+    height: 40px;
+    position: relative;
+    top: 20px;
+    z-index: -20;
+}
+.btnTop
+{
+    background-color: transparent;
+    font-family: Arial;
+    border: none;
+    font-size: larger;
+}
+.reg
+{
+    border-radius: 30px;
+    font-size: x-large;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    padding-inline: 60px;
+    padding-block: 10px;
+    border: none;
+}
+.botonesMenu
+{
+    position: absolute;
+    right: 46px;
+    display: flex; /*significa que se pone todo vertical*/
+    height: 88%;
+    gap: 40px;
+}
+.Bslogan
+{
+   color: white;
+   align-self: auto;
+   position: absolute;
+   top: 35%;
+   left: 60px;
+
+}
+.sloganTXT
+{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.userGroup
+{
+    display: flex; 
+    gap: 8px;
+}
