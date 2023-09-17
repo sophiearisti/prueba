@@ -21,22 +21,29 @@ header
     height: 60px;
     margin: 5px;
     position: absolute;
-    left: 80px;
+    left: 8px;
 }
 
 #userimg
 {
-    height: 38px;
+    height: 42px;
     position: absolute;
-    top: 15px;
-    right: 9%;
+    top: 11px;
+    right: 14%;
+    border-radius: 50%;  
+    border: 2px solid rgb(79, 156, 244);
 }
-
+.circulo-verde
+{
+    position: absolute; /* Esto saca el círculo del flujo normal del documento y te permite posicionarlo */
+    z-index: 1000; /* Asegúrate de que este valor sea mayor que el z-index del header para que se renderice por encima */
+}
 #settings
 {
-    height: 45px;
+    height: 55px;
     position: absolute;
-    top: 15px;
+    top: 7px;
+    right: 7.5%;
 }
 
 #notificaciones
@@ -54,7 +61,7 @@ header
     font-family: 'Shantell Sans', cursive;
     font-size: x-large;
     position: absolute;
-    left: 12%;
+    left: 7%;
     top: 0%;
 }
 
