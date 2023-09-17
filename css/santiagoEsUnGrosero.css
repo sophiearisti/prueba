@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Manjari';
+    src: url('https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap');
+  }
 body
 {
     font-family: system-ui;
@@ -39,6 +43,12 @@ header
     top: 20px;
     z-index: -20;
 }
+
+#slogan1
+{
+    font-family: 'Bowlby One', cursive;
+}
+
 .btnTop
 {
     background-color: transparent;

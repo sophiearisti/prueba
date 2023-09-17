@@ -1,17 +1,28 @@
-#fondoSesion
-{
-    width: 100%; 
-    height: 100%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    z-index: -50;
-}
+  #fondoSesion
+  {
+      width: 100%; 
+      height: 100%;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      z-index: -50;
+  }
+
+  section
+  {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body
+  {
+    padding-bottom: 30px;
+  }
+
 .switch {
     position: relative;
     display: inline-block;
-    width: 100px;
+    width: 140px;
     height: 34px;
   }
   
@@ -30,7 +41,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-image: linear-gradient(to right, #f6d365 20%,#eead58 50%, #fda085 100%);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
@@ -50,15 +61,196 @@
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-image: linear-gradient(to right, #b19c54 20%,#b48241 50%, #b56f5c 100%);
+   
   }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
+
+ /* input:focus + .slider {  
+  }*/
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(60px);
-    -ms-transform: translateX(60px);
-    transform: translateX(60px);
+    -webkit-transform: translateX(105px);
+    -ms-transform: translateX(105px);
+    transform: translateX(105px);
   }
+
+#logo
+{
+    height: 70px;
+    margin: 10px;
+    position: fixed;
+}
+
+#LineaH
+{
+height: 3px;
+width: 10%;
+border-width:0;
+background-color:#f19ba6;
+right: 580px;
+position: absolute;
+top: 15%;
+}
+
+#IngresarTitle
+{
+position: absolute;
+right: 595px;
+top: 8.7%;
+}
+
+#B1
+{
+position: absolute;
+right: 567px;
+top: 20%;
+color: #919596;
+}
+
+#B2
+{
+position: absolute;
+right: 517px;
+top: 25%;
+color: #919596;
+}
+
+#ID
+{
+top: 40%;
+}
+
+#Nombreusuario
+{
+top: 50%;
+}
+
+#Informacion
+{
+    border-radius: 80%;
+    font-size: x-large;
+    position: absolute;
+}
+
+#contrasena
+{
+top: 60%;
+}
+
+.texto
+{
+width: 25%;
+right: 478px;
+position: absolute;
+border: none;
+border-bottom: 1.5px solid #171616; /* Define un borde inferior de 2px de grosor y color gris */
+outline: none; /* Elimina el resaltado al enfocar */
+}
+
+input[type="text"]::-webkit-input-placeholder , input[type="password"]::-webkit-input-placeholder {
+color: #a99f9f;
+}
+
+#soy
+{
+position: absolute;
+right: 775px;
+top: 67%;
+font-weight: bold;
+}
+
+#tipoUsuario
+{
+  display: flex;          /* Convierte el contenedor en un contenedor flex */
+  align-items: center;
+  gap: 20px;
+  top: 75%;
+  position: absolute;
+  right: 37.7%;
+}
+
+#continuar
+{
+  border: none;
+  border-radius: 34px;
+  background-color: #6ba1ed;
+  width: 15%;
+  padding: 10px 25px;    
+  font-size: larger; 
+  display: flex;
+  align-items: center;   /* Centra los ítems verticalmente */
+  justify-content: center; /* Centra los ítems horizontalmente */  
+  position: absolute;
+  top: 90%;
+  right: 43.7%;
+
+}
+#flecha
+{
+    height: 28px;
+    margin-right: 20px;
+}
+
+div.vertical-line {
+  width: 1.6px;
+  height: 20px;
+  background-color: rgb(48, 45, 45);
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  bottom: 50px; 
+  }
+  
+  #olvideContrasena
+  {
+  border: none;
+  background-color: transparent;
+  color: #f46f6f;
+  position: absolute;
+  top: 100%;
+  right: 51%;
+  margin-bottom: 30px;
+  bottom: 50px; 
+  }
+
+  #olvideContrasena:active
+  {
+    text-decoration: underline;
+  }
+  
+  #Registrarme
+  {
+    border: none;
+    background-color: transparent;
+    color: #4ea4ef;
+    position: absolute;
+    top: 100%;
+    right: 43.2%;
+    margin-bottom: 30px;
+    bottom: 50px; 
+  }
+
+  #Registrarme:active
+  {
+    text-decoration: underline;
+  }
+  
+
+div.vertical-line {
+  width: 1.6px;
+  height: 20px;
+  background-color: rgb(48, 45, 45);
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  bottom: 50px; 
+}
+
+#final
+{
+  position: absolute;
+  top: 120%;
+}
+

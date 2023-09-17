@@ -1,0 +1,268 @@
+#fondoSesion
+{
+    width: 100%; 
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: -50;
+}
+
+section
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+  padding-bottom: 30px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #f6d365 20%,#eead58 50%, #fda085 100%);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(to right, #b19c54 20%,#b48241 50%, #b56f5c 100%);
+ 
+}
+
+/* input:focus + .slider {  
+}*/
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(105px);
+  -ms-transform: translateX(105px);
+  transform: translateX(105px);
+}
+
+#logo
+{
+  height: 70px;
+  margin: 10px;
+  position: fixed;
+}
+
+#LineaH
+{
+height: 3px;
+width: 12%;
+border-width:0;
+background-color:#f19ba6;
+right: 590px;
+position: absolute;
+top: 10%;
+}
+
+#IngresarTitle
+{
+position: absolute;
+right: 595px;
+top: 3.7%;
+}
+
+#B1
+{
+position: absolute;
+right: 455px;
+top: 15%;
+color: #919596;
+}
+
+#B2
+{
+position: absolute;
+right: 574px;
+top: 20%;
+color: #919596;
+font-size: x-small;
+}
+
+#B3
+{
+position: absolute;
+right: 655px;
+top: 22%;
+color: #919596;
+font-size: x-small;
+}
+
+#ID
+{
+right: 720px;
+top: 32%;
+}
+
+#Nombreusuario
+{
+right: 720px;
+top: 42%;
+}
+
+#contrasena
+{
+right: 720px;
+top: 52%;
+}
+
+#correo
+{
+right: 720px;
+top: 62%;
+}
+
+#nombre
+{
+right: 400px;
+top: 32%;
+}
+
+#apellido
+{
+right: 400px;
+top: 42%;
+}
+
+#telefono
+{
+right: 400px;
+top: 52%;
+}
+
+#fecha
+{
+right: 400px;
+top: 62%;
+position: absolute;
+width: 18%;
+}
+
+.texto
+{
+width: 18%;
+position: absolute;
+border: none;
+border-bottom: 1.5px solid #171616; /* Define un borde inferior de 2px de grosor y color gris */
+outline: none; /* Elimina el resaltado al enfocar */
+}
+
+input[type="text"]::-webkit-input-placeholder , input[type="password"]::-webkit-input-placeholder {
+color: #a99f9f;
+}
+
+#soy
+{
+position: absolute;
+right: 775px;
+top: 67%;
+font-weight: bold;
+}
+
+#tipoUsuario
+{
+display: flex;          /* Convierte el contenedor en un contenedor flex */
+align-items: center;
+gap: 20px;
+top: 74%;
+position: absolute;
+right: 37.7%;
+}
+
+#Registrarme
+{
+border: none;
+border-radius: 34px;
+background-color: #6ba1ed;
+width: 15%;
+padding: 10px 25px;    
+font-size: larger; 
+display: flex;
+align-items: center;   /* Centra los ítems verticalmente */
+justify-content: center; /* Centra los ítems horizontalmente */  
+position: absolute;
+top: 90%;
+right: 43.7%;
+
+}
+#flecha
+{
+  height: 28px;
+  margin-right: 20px;
+}
+
+div.vertical-line {
+width: 1.6px;
+height: 20px;
+background-color: rgb(48, 45, 45);
+display: inline-block;
+position: absolute;
+top: 100%;
+right: 50%;
+bottom: 50px; 
+}
+
+#final
+{
+position: absolute;
+top: 105%;
+}
+
+#i 
+{
+color: aliceblue;
+background-color: rgb(32, 95, 141);
+border-radius:80%;
+border: none;
+position: absolute;
+top: 40%;
+right: 75%;
+font-size: x-small;
+}
+
+#i:hover + .display-on-hover 
+{
+  display: block;
+}
+
+.display-on-hover 
+{
+  display: none;
+}
