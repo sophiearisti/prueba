@@ -1,6 +1,6 @@
 body
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
     background: #ffffff;
 }
 
@@ -50,8 +50,6 @@ header
 
 #slogan1
 {
-    font-family: 'Bowlby One', cursive;
-    font-family: 'Manjari', sans-serif;
     font-family: 'Shantell Sans', cursive;
     font-size: x-large;
     position: absolute;
@@ -148,7 +146,7 @@ header
 #promociones
 {
     top: 78%;
-    left: 60px;
+    left: 40px;
 }
 
 #expe
@@ -161,11 +159,19 @@ header
 {
     position: absolute;
     left: 7%;
-    height: 150px;
+    height: 135px;
     border-radius: 50%;        /* Hace que la imagen sea un círculo */
     overflow: hidden; 
     border: 6px solid rgb(79, 156, 244);
 
+}
+#nombreminiProducto
+{
+    position: absolute;
+    top: 33%;
+    left: 5.5%;
+    overflow: hidden;
+    color: #7B7972; 
 }
 
 
@@ -472,4 +478,157 @@ body.overlayActive {
 {
     text-align: center;
 }
+.pestanamenu
+{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 380px;
+    z-index: 200;
+    background-color: #FFF3D7;
+    padding: 10px;
+    top: 0%;
+    -webkit-box-shadow: 0px 0px 0px 9900px rgba(255, 248, 196, 0.5);
+    box-shadow: 0px 0px 0px 9900px rgba(230, 179, 69, 0.381);
+    pointer-events: auto;  /* Esto asegura que el popup siga siendo interactivo */
+}
 
+#pestanadelmenu:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    max-height: 100%;
+  }
+
+#arrow
+{
+    background-color: transparent;
+    border: none;
+    height: 20px;
+    margin-left: 210px;
+}
+#logomenu
+{
+    height: 80px;
+}
+.botonmenu
+{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    height: 8%;
+}
+.botonazul
+{
+    height: 50px;
+    border-top-left-radius: 20px;   /* Top-left corner rounded */
+    border-bottom-left-radius: 20px; /* Bottom-left corner rounded */
+    border-top-right-radius: 20px;   /* Top-left corner rounded */
+    border-bottom-right-radius: 20px; /* Bottom-left corner rounded */
+    border: none;
+    width: 120px;
+    background-color: #68A8C1;
+    position: absolute;
+    top: 16%;
+    color: white;
+}
+
+#equismenu
+{
+    left: 87%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 2000;
+}
+
+#cerrasesion
+{
+    left: 13%;
+}
+#ayuda
+{
+    left: 54%;
+}
+
+#secciones
+{
+   position: absolute;
+   top: 26%; 
+}
+#mapa
+{
+    top: 32%; 
+}
+.textoBotonm
+{
+    margin-right: 28px;
+}
+#Productos
+{
+    top: 40%; 
+}
+.textoBotonp
+{
+    margin-right: 65px;
+}
+#tiendas
+{
+    top: 48%; 
+    left: 2.8%;
+}
+.textoBotont
+{
+    margin-right: 76px;
+}
+#Historial
+{
+    top: 57%; 
+}
+.textoBotonh
+{
+    margin-right: 7px;
+}
+#estado
+{
+    top: 65%; 
+}
+.textoBotone
+{
+    margin-right: 17px;
+}
+#cuenta
+{
+    position: absolute;
+    top: 73%;
+}
+#infocuenta
+{
+    top: 80%;
+}
+.textoBotoni
+{
+    margin-right: -8px;
+}
+#conf
+{ 
+    left: 4%;
+    top: 90%;
+}
+.textoBotonb
+{
+    margin-right: 8px;
+}
+#hr1menu
+{
+  margin-top: 25%;
+}
+#hr2menu
+{
+  margin-top: 88%;
+}

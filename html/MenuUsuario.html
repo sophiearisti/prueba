@@ -4,6 +4,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Manjari:wght@400;700&family=Shantell+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Manjari:wght@400;700&family=Nunito:wght@200;600&family=Shantell+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/MenuUsuario.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,9 +23,10 @@
         <img id="carrito" src="../imagenes/carrito.gif" alt="carrito">
     </button>
 
-    <button class="btnTop" id="menu">
-        <img id="opciones" src="../imagenes/menu.png" alt="menu">
-      </button>
+    <a class="btnTop" id="menu" href="#" onclick="show('pestanadelmenu')">
+      <img id="opciones" src="../imagenes/menu.png" alt="menu">
+    </a>
+
     <button class="btnTop">
         <img id="userimg" src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="usericon">
     </button>
@@ -58,15 +62,21 @@
      Promociones
     </h3>
 
-    <a id="expe" href="#" onclick="show('popup')">
-      <img id="fotominipRODUCTO" src="../imagenes/PRODUCTOIMG.png" alt="foto Producto">
-    </a>
+    <div>
+      <a id="expe" href="#" onclick="show('popup')">
+         <img id="fotominipRODUCTO" src="../imagenes/PRODUCTOIMG.png" alt="foto Producto">
+      </a>
+      <p id="nombreminiProducto">
+        torta de chocolate
+      </p>
+    </div>
+    
 
 
 
     <div class="popUpProducto" id="popup">
 
-         <a id="equisButton" href="#" onclick="hide('popup')">
+      <a id="equisButton" href="#" onclick="hide('popup')">
         <img id="equis" src="../imagenes/equis.png" alt="equis">
       </a>
 
@@ -76,7 +86,9 @@
 
       <hr id="separadorHorizontal1">
 
-      <img id="fotopRODUCTO" src="../imagenes/PRODUCTOIMG.png" alt="foto Producto">
+
+        <img id="fotopRODUCTO" src="../imagenes/PRODUCTOIMG.png" alt="foto Producto">
+     
 
        <div class="scrollBoxinner">
 
@@ -146,6 +158,67 @@
             </button>
 
           </div>
+        </div>
+
+        <div id="pestanadelmenu" class="pestanamenu">
+
+          <img id="logomenu" src="../imagenes/logo.png" alt="es el logo">
+
+          <a id="equismenu" href="#" onclick="hide('pestanadelmenu')">
+            <img id="equis" src="../imagenes/equis.png" alt="equis">
+          </a>
+
+          <button id="cerrasesion" class="botonazul">
+            cerrar sesion
+          </button>
+          <button id="ayuda" class="botonazul">
+            ayuda
+          </button>
+
+          <hr id="hr1menu" >
+
+          <div class="sec">
+              <h2 id="secciones">
+              secciones
+            </h2>
+            <button id="mapa" class="botonmenu">
+              <span class="textoBotonm">Mapa de tiendas</span>
+              <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+            </button> 
+            <button id="Productos" class="botonmenu">
+              <span class="textoBotonp">Productos</span>
+              <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+            </button> 
+            <button id="tiendas" class="botonmenu">
+              <span class="textoBotont">Tiendas</span>
+              <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+            </button> 
+            <button id="Historial" class="botonmenu">
+              <span class="textoBotonh">Historial de pedidos</span>
+              <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+            </button> 
+            <button id="estado" class="botonmenu">
+              <span class="textoBotone">Estado del pedido</span>
+              <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+            </button> 
+          </div>
+          
+          <hr id="hr2menu">
+          <div class="sec">
+              <h2 id="cuenta">
+              cuenta
+            </h2>
+            <button id="infocuenta" class="botonmenu">
+              <span class="textoBotoni">Información de cuenta</span>
+              <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+            </button>
+            <butto class="botonmenu" id="conf">
+              <span class="textoBotonb">Configuraciones</span>
+              <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+            </button>
+          </div>
+          
+
         </div>
     
 
