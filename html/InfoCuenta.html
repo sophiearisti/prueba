@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Manjari:wght@400;700&family=Shantell+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/infoCuenta.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla</title>
+</head>
+<body>
+  <header>
+    <img id="logo" src="../imagenes/logo.png" alt="es el logo">
+
+    <h1 id="slogan1">
+      PONTIREPARTE
+    </h1>
+    <button class="btnTop">
+        <img id="carrito" src="../imagenes/carrito.gif" alt="carrito">
+    </button>
+
+    <a class="btnTop" id="menu" href="#" onclick="show('pestanadelmenu')">
+        <img id="opciones" src="../imagenes/menu.png" alt="menu">
+    </a>
+  
+
+    <input type="text" id="barrabusqueda" class="texto" placeholder="Ingresar Busqueda" required>
+    
+  </header>
+
+  <section>
+    <h1 id="Titulo">
+        Editar perfil
+    </h1>
+    
+    <div id="fotoPerfil">
+        <img id="foto" src="../imagenes/usuario.webp" alt="foto de perfil">
+    </div>
+    <button id="mas">
+        +
+    </button>
+   
+    <p id="nombreU">Nombre de usuario</p>
+    <input type="text" id="Nombreusuario" class="texto" placeholder="Nombre de usuario" value="Sophia1017Aristizabal">
+    
+    <p id="Contra">Contraseña</p>
+
+    <input type="password" id="contrasena" class="texto"placeholder="Contraseña" value="sopita" disabled>
+
+    <button id="cambiar">
+        Cambiar contraseña
+    </button>
+
+    <p id="name">Nombre</p>
+    <input type="text" id="nombre" class="texto" placeholder="Nombre##" value="Sophia">
+    <p id="lastname">Apellido</p>
+    <input type="text" id="apellido" class="texto" placeholder="Apellido##" value="Aristizabal">
+    <p id="tel">Teléfono</p>
+    <input type="text" id="telefono" class="texto" placeholder="Telefono" value="3042674501">
+    <p id="email">Correo</p>
+    <input type="text" id="correo" class="texto" placeholder="Correo Institucional" value="so.aristizabal@gmail.com" disabled>
+   
+    <button id="cancelar">
+        Cancelar
+    </button>
+    <button id="guardar">
+        Guardar
+    </button>
+    <button id="eliminar">
+        Eliminar cuenta
+    </button>
+
+    <div id="pestanadelmenu" class="pestanamenu">
+
+        <img id="logomenu" src="../imagenes/logo.png" alt="es el logo">
+
+        <a id="equismenu" href="#" onclick="hide('pestanadelmenu')">
+          <img id="equis" src="../imagenes/equis.png" alt="equis">
+        </a>
+
+        <button id="cerrasesion" class="botonazul">
+          cerrar sesion
+        </button>
+        <button id="ayuda" class="botonazul">
+          ayuda
+        </button>
+
+        <hr id="hr1menu" >
+
+        <div class="sec">
+            <h2 id="secciones">
+            secciones
+          </h2>
+          <button id="mapa" class="botonmenu">
+            <span class="textoBotonm">Mapa de tiendas</span>
+            <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+          </button> 
+          <button id="Productos" class="botonmenu">
+            <span class="textoBotonp">Productos</span>
+            <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+          </button> 
+          <button id="tiendas" class="botonmenu">
+            <span class="textoBotont">Tiendas</span>
+            <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+          </button> 
+          <button id="Historial" class="botonmenu">
+            <span class="textoBotonh">Historial de pedidos</span>
+            <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+          </button> 
+          <button id="estado" class="botonmenu">
+            <span class="textoBotone">Estado del pedido</span>
+            <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+          </button> 
+        </div>
+        
+        <hr id="hr2menu">
+        <div class="sec">
+            <h2 id="cuenta">
+            cuenta
+          </h2>
+          <button id="infocuenta" class="botonmenu">
+            <span class="textoBotoni">Información de cuenta</span>
+            <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+          </button>
+          <butto class="botonmenu" id="conf">
+            <span class="textoBotonb">Configuraciones</span>
+            <img id="arrow" src="../imagenes/arrowmenu.png" alt="flecha">
+          </button>
+        </div>
+        
+
+      </div>
+
+  </section>
+
+  <script src="../js/infoCuenta.js"></script>
+   
+</body>
+</html> 
