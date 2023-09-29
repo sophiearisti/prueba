@@ -1,3 +1,7 @@
+a {
+  text-decoration: none; /* Quitar el subrayado */
+  color: black; /* Hacer que el color sea el mismo que el del texto circundante */
+}
   #fondoSesion
   {
       width: 100%; 

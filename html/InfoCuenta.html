@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantilla</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
   <header>
@@ -37,9 +38,13 @@
     <div id="fotoPerfil">
         <img id="foto" src="../imagenes/usuario.webp" alt="foto de perfil">
     </div>
-    <button id="mas">
-        +
-    </button>
+
+    <div class="custom-file-upload">
+      <input type="file" id="fileUpload" accept="image/jpeg, image/png, image/jpg" style="display: none;">
+      <button id="mas">+</button>
+    </div>
+    <output></output>
+    
    
     <p id="nombreU">Nombre de usuario</p>
     <input type="text" id="Nombreusuario" class="texto" placeholder="Nombre de usuario" value="Sophia1017Aristizabal">
@@ -52,20 +57,26 @@
         Cambiar contraseña
     </button>
 
-    <p id="name">Nombre</p>
-    <input type="text" id="nombre" class="texto" placeholder="Nombre##" value="Sophia">
-    <p id="lastname">Apellido</p>
-    <input type="text" id="apellido" class="texto" placeholder="Apellido##" value="Aristizabal">
-    <p id="tel">Teléfono</p>
-    <input type="text" id="telefono" class="texto" placeholder="Telefono" value="3042674501">
-    <p id="email">Correo</p>
-    <input type="text" id="correo" class="texto" placeholder="Correo Institucional" value="so.aristizabal@gmail.com" disabled>
-   
+    <form action="">
+      <p id="name">Nombre</p>
+       <input type="text" id="nombre" class="texto" placeholder="Nombre##" value="Sophia" required>
+      <p id="lastname">Apellido</p>
+       <input type="text" id="apellido" class="texto" placeholder="Apellido##" value="Aristizabal" required>
+      <p id="tel">Teléfono</p>
+       <input type="text" id="telefono" class="texto" placeholder="Telefono" value="3042674501" required>
+      <p id="email">Correo</p>
+       <input type="text" id="correo" class="texto" placeholder="Correo Institucional" value="so.aristizabal@gmail.com" disabled required>
+    
+      <button id="guardar"  type="submit">
+        Guardar
+      </button>
+
+    </form>
+    
+
+
     <button id="cancelar">
         Cancelar
-    </button>
-    <button id="guardar">
-        Guardar
     </button>
     <button id="eliminar">
         Eliminar cuenta
@@ -79,9 +90,9 @@
           <img id="equis" src="../imagenes/equis.png" alt="equis">
         </a>
 
-        <button id="cerrasesion" class="botonazul">
+        <a id="cerrasesion" class="botonazul" href="/Users/sophiaaristizabal/Documents/GitHub/Desarrollo_fundamentos/index.html">
           cerrar sesion
-        </button>
+        </a>
         <button id="ayuda" class="botonazul">
           ayuda
         </button>

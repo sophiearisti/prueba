@@ -16,6 +16,7 @@ header
     z-index: 10;
 }
 
+
 #logo
 {
     height: 60px;
@@ -537,6 +538,12 @@ body.overlayActive {
     position: absolute;
     top: 16%;
     color: white;
+    font-weight: bolder;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Esto asegura que el texto esté centrado si hay algún comportamiento no deseado */
+
 }
 
 #equismenu
@@ -549,7 +556,9 @@ body.overlayActive {
 
 #cerrasesion
 {
-    left: 13%;
+    left: 20%;
+    top: 15.9%;
+    z-index: 2000;
 }
 #ayuda
 {
@@ -600,7 +609,7 @@ body.overlayActive {
 }
 .textoBotone
 {
-    margin-right: 17px;
+    margin-right: 16px;
 }
 #cuenta
 {
@@ -609,7 +618,14 @@ body.overlayActive {
 }
 #infocuenta
 {
-    top: 80%;
+    left: 1%;
+    top: 81%;
+    z-index: 2000;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: black;
+
 }
 .textoBotoni
 {
@@ -631,4 +647,8 @@ body.overlayActive {
 #hr2menu
 {
   margin-top: 88%;
+}
+a {
+    text-decoration: none; /* Quitar el subrayado */
+    font-family: 'Nunito', sans-serif;
 }
