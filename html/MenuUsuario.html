@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantilla</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
   <header>
@@ -27,9 +28,9 @@
       <img id="opciones" src="../imagenes/menu.png" alt="menu">
     </a>
 
-    <button class="btnTop">
-        <img id="userimg" src="../imagenes/usuario.webp" alt="usericon">
-    </button>
+    <div id="fotoPerfil">
+      <img id="userimg" src="../imagenes/usuario.webp" alt="usericon">
+    </div>
 
     <input type="text" id="barrabusqueda" class="texto" placeholder="Ingresar Busqueda" required>
     
@@ -58,18 +59,33 @@
     <h3 class="textoP" id="tiendas">
      Las tiendas
     </h3>
+
+    <div class="scrollBoxTienda">
+    
+    </div>
+
+
+
     <h3 class="textoP" id="promociones">
      Promociones
     </h3>
 
-    <div>
-      <a id="expe" href="#" onclick="show('popup')">
-         <img id="fotominipRODUCTO" src="../imagenes/PRODUCTOIMG.png" alt="foto Producto">
-      </a>
-      <p id="nombreminiProducto">
-        torta de chocolate
-      </p>
+    
+
+    <div class="scrollBoxProducto">
+      <div class="producto">
+          <div class="circuloproducto">
+            <a  href="#" onclick="show('popup')">
+            <img class="fotominipRODUCTO" src="../imagenes/PRODUCTOIMG.png" alt="foto Producto">
+            </a>
+          </div>
+          
+          <p class="nombreminiProducto">
+            torta de chocolate
+          </p>
+      </div>
     </div>
+
     
     <div class="popUpProducto" id="popup">
 
@@ -84,9 +100,10 @@
       <hr id="separadorHorizontal1">
 
 
-      <img id="fotopRODUCTO" src="../imagenes/PRODUCTOIMG.png" alt="foto Producto">
-     
-
+      <div id="circuloPRODUCTO">
+        <img id="fotopRODUCTO" src="../imagenes/PRODUCTOIMG.png" alt="foto Producto">
+      </div>
+      
        <div class="scrollBoxinner">
 
           <div id="encabezado">

@@ -112,7 +112,6 @@ header
     border-radius: 200px;
     right: 27.5%;
     top: 27%;
-    font-size:;
     background-color: rgb(134, 220, 49);
     color: #FFF3D7;
     border: none;
@@ -166,6 +165,7 @@ header
 
 #cambiar
 {
+  display: flex;
     position: absolute;
     left: 60%;
     top: 49.5%;
@@ -178,6 +178,8 @@ header
     border-bottom-left-radius: 5px; /* Bottom-left corner rounded */
     border-top-right-radius: 5px;   /* Top-left corner rounded */
     border-bottom-right-radius: 5px; /* Bottom-left corner rounded */
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente */
 }
 
 #name
@@ -408,6 +410,7 @@ a {
 #ayuda
 {
     left: 54%;
+    z-index: 2000;
 }
 
 #secciones
@@ -486,3 +489,216 @@ a {
 {
   margin-top: 88%;
 }
+
+
+.alert
+{
+  background: #a1cdf4;
+  padding: 150px 20px;
+  min-width: 400px;
+  position: absolute;
+  right: 400px;
+  top: 150px;
+  border-radius: 4px;
+  border-left: 8px solid #68A8C1;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.alert .fa-exclamation-circle{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #68A8C1;
+    font-size: 30px;
+  }
+  
+  .alert .msg{
+    padding: 0 20px;
+    color: #47778a;
+  }
+
+  #tituloNotif
+  {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bolder;
+    top: 15%;
+    left: 27%;
+  }
+
+  #textoNotif
+  {
+    position: absolute;
+    top: 45%;
+    left: 17%;
+  }
+  
+  .alert .close-btn, .alert .yes-btn, .alert .no-btn{
+    position: absolute;
+    transform: translateY(-50%);
+    background: #ffffff;
+    padding: 3px 18px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .alert .close-btn
+  {
+    right: 13px;
+    top: 10%;
+    border-radius: 100px;
+    background: #47778a;
+  }
+
+  .alert .yes-btn
+  {
+    left: 133px;
+    top: 80%;
+  }
+
+  .alert .no-btn
+  {
+    left: 250px;
+    top: 80%;
+  }
+  
+  .alert .close-btn:hover, .alert .yes-btn:hover, .alert .no-btn:hover{
+    background: #ffebbf;
+  }
+  
+ .alert .yes-btn .fas, .alert .no-btn .fas{
+    color: #47778a;
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .alert .close-btn .fas
+  {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .alert.showAlert{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .alert.show{
+    animation: show_slide 1s ease forwards;
+  }
+  @keyframes show_slide {
+    0%{
+      transform: translateX(100%);
+    }
+    40%{
+      transform: translateX(-10%);
+    }
+    80%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-10px);
+    }
+  }
+  
+  .alert.hide{
+    animation: hide_slide 1s ease forwards;
+  }
+  @keyframes hide_slide {
+    0%{
+      transform: translateX(-10px);
+    }
+    40%{
+      transform: translateX(0%);
+    }
+    80%{
+      transform: translateX(-10%);
+    }
+    100%{
+      transform: translateX(200%);
+      opacity: 0;
+    }
+  }
+
+
+  .alert2
+  {
+    background: #ffdb9b;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    border-radius: 4px;
+    border-left: 8px solid #ffa502;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }  
+  
+  .alert2.showAlert{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .alert2.show{
+    animation: show_slide 1s ease forwards;
+  }
+
+  .alert2.hide{
+    animation: hide_slide2 1s ease forwards;
+  }
+
+  @keyframes hide_slide2 {
+    0%{
+      transform: translateX(-10px);
+    }
+    40%{
+      transform: translateX(0%);
+    }
+    80%{
+      transform: translateX(-10%);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+  }
+
+  .alert2 .fa-exclamation-circle{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ce8500;
+    font-size: 30px;
+  }
+  
+  .alert2 .msg2{
+    padding: 0 20px;
+    font-size: 14px;
+    color: #ce8500;
+  }
+  
+  .alert2 .close-btn2{
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffd080;
+    padding: 3px 18px;
+    cursor: pointer;
+  }
+  
+  .alert2 .close-btn2:hover{
+    background: #ffc766;
+  }
+  
+  .alert2 .close-btn2 .fas{
+    color: #ce8500;
+    font-size: 22px;
+    line-height: 40px;
+  }
+  
+  

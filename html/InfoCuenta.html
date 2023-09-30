@@ -46,26 +46,24 @@
     <output></output>
     
    
-    <p id="nombreU">Nombre de usuario</p>
-    <input type="text" id="Nombreusuario" class="texto" placeholder="Nombre de usuario" value="Sophia1017Aristizabal">
-    
-    <p id="Contra">Contraseña</p>
+    <a id="cambiar" href="/Users/sophiaaristizabal/Documents/GitHub/Desarrollo_fundamentos/html/RecuperarContrasena.html">
+       Cambiar contraseña
+    </a>
 
-    <input type="password" id="contrasena" class="texto"placeholder="Contraseña" value="sopita" disabled>
+    <form action="" class="camposCambiar">
+      <p id="nombreU">Nombre de usuario</p>
+        <input type="text" id="Nombreusuario" class="texto" placeholder="Nombre de usuario"  required>
+     <p id="Contra">Contraseña</p>
+      <input type="password" id="contrasena" class="texto"placeholder="Contraseña" value="sopita" disabled required>
 
-    <button id="cambiar">
-        Cambiar contraseña
-    </button>
-
-    <form action="">
       <p id="name">Nombre</p>
-       <input type="text" id="nombre" class="texto" placeholder="Nombre##" value="Sophia" required>
+       <input type="text" id="nombre" class="texto" placeholder="Nombre"  required>
       <p id="lastname">Apellido</p>
-       <input type="text" id="apellido" class="texto" placeholder="Apellido##" value="Aristizabal" required>
+       <input type="text" id="apellido" class="texto" placeholder="Apellido"  required>
       <p id="tel">Teléfono</p>
-       <input type="text" id="telefono" class="texto" placeholder="Telefono" value="3042674501" required>
+       <input type="text" id="telefono" class="texto" placeholder="Telefono"  required>
       <p id="email">Correo</p>
-       <input type="text" id="correo" class="texto" placeholder="Correo Institucional" value="so.aristizabal@gmail.com" disabled required>
+       <input type="text" id="correo" class="texto" placeholder="Correo Institucional" value="so.aristizabal@gmail.com" disabled >
     
       <button id="guardar"  type="submit">
         Guardar
@@ -93,9 +91,9 @@
         <a id="cerrasesion" class="botonazul" href="/Users/sophiaaristizabal/Documents/GitHub/Desarrollo_fundamentos/index.html">
           cerrar sesion
         </a>
-        <button id="ayuda" class="botonazul">
-          ayuda
-        </button>
+        <a id="ayuda" class="botonazul" href="/Users/sophiaaristizabal/Documents/GitHub/Desarrollo_fundamentos/html/MenuUsuario.html">
+          Menú
+        </a>
 
         <hr id="hr1menu" >
 
@@ -142,6 +140,30 @@
         
 
       </div>
+
+    <div class="alert">
+      <span class="fas fa-exclamation-circle"></span>
+      <span class="msg" id="tituloNotif">ATENCIÓN</span>
+      <span class="msg" id="textoNotif">Está seguro de eliminar su cuenta?</span>
+      <div class="close-btn">
+        <span class="fas fa-times"> x </span>
+        <!-- /*<img id="equis" src="../imagenes/equis.png" alt="equis">*/ -->
+      </div>
+      <div class="yes-btn">
+          <span class="fas fa-times"> sí </span>
+      </div>
+      <div class="no-btn">
+        <span class="fas fa-times"> no </span>
+      </div>
+     </div>
+
+     <div class="alert2">
+      <span class="fas fa-exclamation-circle"></span>
+      <span class="msg2">ATENCION!!</span>
+      <div class="close-btn2">
+         <span class="fas fa-times"> X </span>
+      </div>
+    </div>
 
   </section>
 
