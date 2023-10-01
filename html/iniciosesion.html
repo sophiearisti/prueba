@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio  de Sesion</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
     <img id="fondoSesion" src="../imagenes/fondoIniciosesion .png" alt="fondo">
@@ -48,7 +49,7 @@
                Cliente
             </p>
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" id="Tipo">
                 <span class="slider"></span>
             </label>
             <p>
@@ -56,8 +57,13 @@
             </p> 
         </div>
         
-
-        
+        <div class="alert">
+            <span class="fas fa-exclamation-circle"></span>
+            <span class="msg">ATENCION!!</span>
+            <div class="close-btn">
+               <span class="fas fa-times"> X </span>
+            </div>
+         </div>
 
         <a id="olvideContrasena" href="/Users/sophiaaristizabal/Documents/GitHub/Desarrollo_fundamentos/html/RecuperarContrasena.html">
             olvidé mi contraseña 
@@ -68,7 +74,9 @@
         </a>
         <hr id="final">
 
-    </section>
 
+
+    </section>
+    <script src="../js/inicioSesion.js"></script>
 </body>
 </html>

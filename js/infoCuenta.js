@@ -1,3 +1,33 @@
+async function getInfoUsuario(){
+    return await fetch('http://localhost:3000/info-usuario', {
+  
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            ID: idUsuario //ESTO ES DE LA MEMORIA
+        })
+    })
+  }
+  
+  const promesaInformacionUsuario = getProductos()
+  
+  promesaInformacionUsuario
+    .then(res => {
+        console.log(res.ok)
+  
+        generateInfoProducto(nombre, precio, descuento, disponible, descripcion, ingredientes, tiendasList, imagen);
+  
+        res.json()
+    })
+    .then(data => {
+        console.log(data)
+        variable = data
+    })
+    .catch(() => {
+        console.log('error')
+    })
+
 $(document).ready(function() {
   
     function initializeSessionStorage() {
@@ -110,12 +140,9 @@ $(document).ready(function() {
     }
 
     if(isValid) {
-
         saveToSessionStorage();
         $('.msg2').text('Cambios guardados satisfactoriamente');
         showAlert2();
-        this.submit();  // Submit the form
-
     }
 });
 

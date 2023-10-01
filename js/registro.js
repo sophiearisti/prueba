@@ -1,3 +1,51 @@
+
+async function post(inputID, inputNombreusuario, inputcontrasena, inputnombre, inputapellido, inputtelefono, inputcorreo, inputfecha, inputTipo){
+    return await fetch('http://localhost:3000/crear-usuario', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            ID: inputID,
+            tipo: inputTipo,
+            NUsario: inputNombreusuario,
+            contrasena: inputcontrasena,
+            nombre: inputnombre,
+            apellido: inputapellido,
+            telefeono: inputtelefono,
+            correo: inputcorreo,
+            fecha: inputfecha
+        })
+    })
+}
+
+const promesa = post()
+
+promesa
+    .then(res => {
+        console.log(res.ok)
+        
+        if(res.ok)
+        {
+            $(this).unbind('submit').submit(); // Desvincula el evento 'submit' y luego envía el formulario
+        }
+        else
+        {
+            $('.msg').text('El nombre de usuario ya existe');
+            showAlert();
+        }
+
+        res.json()
+    })
+    .then(data => {
+        console.log(data)
+        variable = data
+    })
+    .catch(() => {
+        console.log('error')
+    })
+    
+
 $(document).ready(function() {
    
     function showAlert(){
@@ -33,6 +81,13 @@ $(document).ready(function() {
         var inputfecha= $('#fecha').val();
         var year = parseInt(inputfecha.split('-')[0]);    // Split the date string at '-' and take the first part
 
+        var tipo;
+
+        if($('#Tipo').is(':checked')) {
+            tipo="domiciliario";
+        } else {
+            tipo="cliente";
+        }
         //evaluar si es un numero
         if(isNaN(inputID) || inputID.trim() === "") 
         {
@@ -87,7 +142,8 @@ $(document).ready(function() {
         }
 
         if(isValid) {
-            $(this).unbind('submit').submit(); // Desvincula el evento 'submit' y luego envía el formulario
+            $(this).unbind('submit').submit(); /*ESTO SE QUITA*/
+            post(inputID, inputNombreusuario, inputcontrasena, inputnombre, inputapellido, inputtelefono, inputcorreo, inputfecha, tipo);
         }
     });
 });
