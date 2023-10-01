@@ -1,6 +1,6 @@
 
 async function post(inputID, inputNombreusuario, inputcontrasena, inputnombre, inputapellido, inputtelefono, inputcorreo, inputfecha, inputTipo){
-    return await fetch('http://localhost:3000/crear-usuario', {
+    return await fetch('http://localhost:8000/crear-usuario', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

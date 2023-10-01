@@ -10,23 +10,24 @@ async function getInfoUsuario(){
     })
   }
   
-  const promesaInformacionUsuario = getProductos()
+  const promesaInformacionUsuario = getInfoUsuario()
   
   promesaInformacionUsuario
     .then(res => {
         console.log(res.ok)
-  
-        generateInfoProducto(nombre, precio, descuento, disponible, descripcion, ingredientes, tiendasList, imagen);
+
   
         res.json()
     })
     .then(data => {
         console.log(data)
-        variable = data
+        generateInfoUsuario(data.usuario,data.nombre, data.apellido, data.telefono);
     })
     .catch(() => {
         console.log('error')
     })
+
+
 
 $(document).ready(function() {
   
@@ -140,9 +141,11 @@ $(document).ready(function() {
     }
 
     if(isValid) {
+
         saveToSessionStorage();
         $('.msg2').text('Cambios guardados satisfactoriamente');
         showAlert2();
+
     }
 });
 

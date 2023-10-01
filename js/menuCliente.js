@@ -31,20 +31,17 @@ const promesaProductos = getProductos()
 
 promesaProductos
   .then(res => {
-      console.log(res.ok)
-
-       //ingresarlo al local storage la lista de ids de productos
-       //y hacer el proceso de ingresar las fotos
-       for (var i = 0; i < cant; i++) {
-      
-       }
-      generateProducts(".scrollBoxProducto", 'popup');
 
       res.json()
   })
   .then(data => {
       console.log(data)
-      variable = data
+      //ingresarlo al local storage la lista de ids de productos
+       //y hacer el proceso de ingresar las fotos
+       for (var i = 0; i < cant; i++) {
+      
+       }
+      generateProducts(".scrollBoxProducto", data.nombre, data.url);
   })
   .catch(() => {
       console.log('error')
@@ -99,18 +96,17 @@ promesaTiendas
   .then(res => {
       console.log(res.ok)
       
-     //ingresarlo al local storage la lista de ids de tiendas
-     //y hacer el proceso de ingresar las fotos
-     for (var i = 0; i < cant; i++) {
-
-     }
-     generateTiendas(".scrollBoxTienda");
 
       res.json()
   })
   .then(data => {
       console.log(data)
-      variable = data
+      //ingresarlo al local storage la lista de ids de tiendas
+     //y hacer el proceso de ingresar las fotos
+     for (var i = 0; i < cant; i++) {
+
+     }
+     generateTiendas(".scrollBoxTienda", data.nombre, data.url);
   })
   .catch(() => {
       console.log('error')
@@ -126,9 +122,7 @@ function generateTiendas(containerSelector) {
       var tiendaBlock = `
       <div class="minitienda">
           <div class="circuloTIENDA">
-            <a  href=,"#" onclick="show('')">
               <img class="fotominiTIENDA" src="../imagenes/LaCentral.png" alt="foto Tienda">
-            </a>
           </div>
           
           <p class="nombreminiTIENDA">
@@ -159,13 +153,13 @@ promesaInformacionProducto
   .then(res => {
       console.log(res.ok)
 
-      generateInfoProducto(nombre, precio, descuento, disponible, descripcion, ingredientes, tiendasList, imagen);
-
       res.json()
   })
   .then(data => {
       console.log(data)
-      variable = data
+
+      //VER EL ARRAY PORF
+      generateInfoProducto(data.nombre, data.precio, data.descuento, data.disponible, data.descripcion, data.ingredientes, data.tiendasList, data.imagen);
   })
   .catch(() => {
       console.log('error')
