@@ -1,6 +1,6 @@
 
 async function post(inputID, inputNombreusuario, inputcontrasena, inputTipo){
-    return await fetch('http://localhost:3000/ingreso', {
+    return await fetch('http://localhost:8080/ingreso', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -1,5 +1,5 @@
 async function getInfoUsuario(){
-    return await fetch('http://localhost:3000/info-usuario', {
+    return await fetch('http://localhost:8080/info-usuario', {
   
         headers: {
             'Content-Type': 'application/json'

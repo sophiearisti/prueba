@@ -16,7 +16,7 @@ var hide = function(id) {
 const cant=20;
 
 async function getProductos(){
-  return await fetch('http://localhost:3000/productos', {
+  return await fetch('http://localhost:8080/productos', {
 
       headers: {
           'Content-Type': 'application/json'

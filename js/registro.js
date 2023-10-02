@@ -1,13 +1,13 @@
 
 async function post(inputID, inputNombreusuario, inputcontrasena, inputnombre, inputapellido, inputtelefono, inputcorreo, inputfecha, inputTipo){
-    return await fetch('http://localhost:8000/crear-usuario', {
+    return await fetch('http://localhost:8080/crear-usuario', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
             ID: inputID,
-            tipo: inputTipo,
+            tipo: inputTipo,j
             NUsario: inputNombreusuario,
             contrasena: inputcontrasena,
             nombre: inputnombre,
